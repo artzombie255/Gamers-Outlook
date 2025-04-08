@@ -9,10 +9,6 @@
    Date:     3/6/2025
    
    Filename: go_styles1.css
-   
-   This file contains the layout styles used in the Trusted Friends
-   home page.
-
 */
 
 /* ===========
@@ -24,9 +20,10 @@
 /* Img Styles */
 
 img {
-    width: 23%;
+    width: 100%;
     display: block;
-    float: left;
+    margin-top: -12px;
+    float: right;
 }
 
 icon{
@@ -42,7 +39,7 @@ html {
 }
 
 body {
-    background: rgb(255, 0, 0);
+    background: rgb(117, 140, 72);
     margin: 0px auto;
     min-height: 100%;
     min-width: 320px;
@@ -57,17 +54,18 @@ body {
 /* Horizonal Navigation Styles */
 
 nav.horizontalNavigation {
-    background-color: rgb(117, 140, 72);
-    min-height: 4em;
+    background-color: rgb(255 0 0);
+    min-height: 15em;
 }
 
     nav.horizontalNavigation li {
         color: rgb(31, 73, 125);
         display: block;
         float: left;
-        width: 11%; 
+        width: 14%;
         line-height: 2em;
         text-transform: uppercase;
+        margin-top: 0px;
     }
 
 nav.horizontalNavigation a {
@@ -79,34 +77,41 @@ nav.horizontalNavigation a:visited, nav.horizontalNavigation a:link {
     color: rgb(31, 73, 125);
 }
 
-nav.horizontalNavigation a:hover, nav.horizontalNavigation a:active {
-    background-color: rgb(31, 73, 125);
-    color: white;
-
-
-
-            /* Main Menu Styles */
-            /* Submenu Styles */
-            /* Section Styles */
-            /* Aside Styles */
-            /* Footer Styles */
-            /* Pulldown Menu Styles */
-            /* New Styles Added Below */
-            /* ==================================
+    nav.horizontalNavigation a:hover, nav.horizontalNavigation a:active {
+        background-color: rgb(31, 73, 125);
+        color: white;
+    }
+        /* Main Menu Styles */
+        /* Submenu Styles */
+        /* Section Styles */
+        /* Aside Styles */
+        /* Footer Styles */
+        /* Pulldown Menu Styles */
+        /* New Styles Added Below */
+    
+/* ==================================
 Mobile Styles: 0px to 480px
-    =================================
+   =================================
 */
-            @media only screen and (max-width: 480px) {
+        @media only screen and (max-width: 480px) {
+
+            nav.horizontalNavigation li {
+                display: block;
+                float: none;
+                width: 100%;
+                line-height: 2em;
+                text-transform: uppercase;
             }
-            /* ==================================
+        }
+        /* ==================================
 Tablet Styles: 481px and greater
     =================================
 */
-            @media only screen and (min-width: 481px) {
-            }
-            /* ==================================
+        @media only screen and (min-width: 481px) {
+        }
+        /* ==================================
 Desktop Styles: 769px and greater
     =================================
 */
-            @media only screen and (min-width: 769px) {
-            }
+        @media only screen and (min-width: 769px) {
+        }
