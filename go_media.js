@@ -10,6 +10,7 @@ const context = CANVAS_CONTEXT;
 var score = 0;
 var balls = [];
 var paddle = { x: 50, y: 100, w: 5, h: 60 };
+var incremented = false;
 var Key = {
     DOWN: 40,
     UP: 38,
@@ -80,25 +81,28 @@ function drawPong() {
             ) {
                 ball.velocity.y *= -1;
             }
+            incremented = false;
         }
 
         ball.position.x += ball.velocity.x;
         ball.position.y += ball.velocity.y;
         if (ball.position.x < 20) {
             count = 0;
-            score = 0;
-            console.log(score);
+            console.log(count);
         }
-        if (ball.position.x > 280) {
+        if (ball.position.x > 280 && incremented === false) {
+            incremented = true;
             count++;
         }
         if (count === 21) {
-            score++;
-            count = 0;
-            console.log(score);
+            balls.splice(0, 3);
         }
     });
 
+    if (count < 21)
+        document.getElementById("score").innerHTML = count;
+    else 
+        document.getElementById("score").innerHTML = "You Win!";
     window.requestAnimationFrame(drawPong);
 }
 

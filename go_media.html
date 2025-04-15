@@ -17,19 +17,27 @@
             <ul>
                 <li><a href="go_home.html">Home</a></li>
                 <li><a href="go_info.html">Info</a></li>
-                <li><a href="go_history.html">Video Game History</a></li>
-                <li><a href="go_genres.html">Genres and Game Systems</a></li>
-                <li><a href="go_cost.html">Costs of Video Games</a></li>
-                <li><a href="go_future.html">Future Predictions</a></li>
+                <li><a href="go_history.html">History</a></li>
+                <li><a href="go_genres.html">Genres and Systems</a></li>
+                <li><a href="go_cost.html">Costs</a></li>
+                <li><a href="go_future.html">Predictions</a></li>
                 <li><a href="go_media.html">Media</a></li>
             </ul>
         </nav>
     </header>
-    <canvas id="sandbox" width="300px" height="300px"> </canvas>
-    <script src="./go_media.js"></script>
-    <button onclick="addBall()">
-        start game
-    </button>
-    <script>update();</script>
+    <div>
+        <canvas id="sandbox" width="300px" height="300px"> </canvas>
+        <script src="./go_media.js"></script>
+        <script>update();</script>
+    </div>
+    <div>
+        <button onclick="addBall()">
+            start game
+        </button>
+    </div>
+    <div class="gameScore">
+        <p class="score">Score =&nbsp;</p>
+        <p id="score">0</p>
+    </div>
 </body>
 </html>
