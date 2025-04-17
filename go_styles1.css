@@ -52,6 +52,9 @@ p {
     font-size: 1.3em;
 }
 
+div.pongVideo {
+    display: none;
+}
 /* Body Header Styles */
 
 
@@ -153,9 +156,15 @@ Tablet Styles: 481px and greater
         display: none;
     }
 
-    p.gameScore {
+
+    div.gameScore p {
         display: none;
     }
+
+    div.pongVideo {
+        display: block;
+    }
+
 }
 
 /* ==================================
@@ -187,8 +196,12 @@ Mobile Styles: 0px to 480px
                 display: none;
             }
 
-            p.gameScore {
+            div.gameScore p {
                 display: none;
+            }
+
+            div.pongVideo {
+                display: block;
             }
 
         }
