@@ -22,6 +22,7 @@ table.gameSystems {
     border: 5px outset rgb(153, 0, 153);
     font-size: 0.75em;
     width: 50%;
+float: left;
 }
 
     /* Table Cell Styles */
@@ -75,29 +76,4 @@ col.dayCols {
 
 table {
     empty-cells: hide;
-}
-
-
-
-
-/* ==================================
-Tablet Styles: 481px and greater
-    =================================
-*/
-@media only screen and (max-width: 768px) {
-    table.gameSystems {
-        width: 100%;
-    }
-
-}
-
-/* ==================================
-Mobile Styles: 0px to 480px
-   =================================
-*/
-@media only screen and (max-width: 480px) {
-
-    table.gameSystems {
-        width: 100%;
-    }
 }
