@@ -50,6 +50,9 @@ body {
 
 p {
     font-size: 1.3em;
+    display: block;
+    float: left;
+    margin: 2%;
 }
 
 div.pongVideo {
@@ -61,7 +64,6 @@ div.genreP {
     display: block;
     float: left;
     margin: 2%;
-    margin-top: 0%;
 }
 /* Body Header Styles */
 
@@ -131,25 +133,49 @@ p {
 }
 
 p.costP {
-    width: 50%;
-    display: block;
     float: left;
+    width: 70%;
+    border: dashed;
+    padding: 6px;
 }
 
 img.infographic {
     margin-top: 0px;
-    width: 50%;
+    width: 70%;
     display: block;
-    float: left;
-}
-
-p.future {
-    width: 50%;
-    display: block;
-    float: left;
+    float: right;
+    border: dashed;
 }
 
 
+p.mediaP {
+    width: 70%;
+    float: right;
+}
+
+
+p.homeP {
+    width: 50%;
+    border: solid;
+    padding: 5px;
+}
+
+figure {
+    background: black;
+    color: white;
+    width: 25%; 
+    float: right;
+    margin-top: 2%;
+    margin-right: 5%;
+    border: solid;
+    border-right: none;
+    border-color: black;
+}
+
+figure.TFT {
+    float: left;
+
+}
 
 
 /* ==================================
@@ -202,6 +228,21 @@ Tablet Styles: 481px and greater
         margin: 2%;
     }
 
+    p.costP {
+        float: left;
+        width: 97%;
+        border: dashed;
+        padding: 1%;
+        margin: 0%;
+    }
+
+    img.infographic {
+        margin-top: 0px;
+        width: 100%;
+        border: none;
+    }
+
+
 }
 
 /* ==================================
@@ -252,6 +293,19 @@ Mobile Styles: 0px to 480px
                 margin: 2%;
             }
 
+            p.costP {
+                float: left;
+                width: 97%;
+                border: dashed;
+                padding: 1%;
+                margin: 0%;
+            }
+
+            img.infographic {
+                margin-top: 0px;
+                width: 100%;
+                border: none;
+            }
         }
         /* ==================================
 Desktop Styles: 769px and greater

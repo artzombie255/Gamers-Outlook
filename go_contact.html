@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Gamers Outlook</title>
+    <link rel="icon" href="GamersOutlookIcon.png">
+    <meta charset="utf-8" />
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1" />
+    <link href="go_reset.css" rel="stylesheet" />
+    <link href="go_styles1.css" rel="stylesheet" />
+    <link href="go_forms.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <img src="GamersOutlookHeader.png" alt="Gamer's Outlook" />
+        <nav class="horizontalNavigation">
+            <ul>
+                <li><a href="go_home.html">Home</a></li>
+                <li><a href="go_contact.html">Contact</a></li>
+                <li><a href="go_history.html">History</a></li>
+                <li><a href="go_genre.html">Genres and Systems</a></li>
+                <li><a href="go_costs.html">Costs</a></li>
+                <li><a href="go_future.html">Predictions</a></li>
+                <li><a href="go_media.html">Media</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form id="survey" action="http://www.example.com/redball/survey" method="post">
+        <fieldset id="custInfo">
+            <legend>Question Submission</legend>
+
+            <div class="formRow">
+                <label for="name">Name</label>
+                <input name="custName" id="name" type="text" placeholder="first and last name" />
+            </div>
+
+            <div class="formRow">
+                <label for="mail">E-mail*</label>
+                <input name="custEmail" id="mail" type="email" required />
+            </div>
+
+            <label for="commBox">
+                What questions do you have?
+            </label>
+            <textarea name="custExp" id="commBox"></textarea>
+
+
+
+        </fieldset>
+
+        <fieldset id="mailList">
+            <legend>Mailing List</legend>
+
+            <div class="formRow">
+                <label for="name">Name</label>
+                <input name="custName" id="name" type="text" placeholder="first and last name" />
+            </div>
+
+            <div class="formRow">
+                <label for="mail">E-mail*</label>
+                <input name="custEmail" id="mail" type="email" />
+            </div>
+
+            <div class="formRow">
+                <label>Do you want to be signed up for our mailing list?</label>
+                <fieldset class="optGroup">
+                    <label for="fYes">Yes</label>
+                    <input name="sFriend" id="fYes" value="yes"
+                           type="radio" />
+                    <label for="fNo">No</label>
+                    <input name="sFriend" id="fNo" value="no"
+                           type="radio" />
+                </fieldset>
+            </div>
+
+
+        </fieldset>
+        <div id="buttons">
+            <input type="submit" value="Submit My Survey" />
+            <input type="reset" value="Cancel" />
+        </div>
+    </form>
+
+</body>
+</html>
