@@ -17,7 +17,7 @@
             <ul>
                 <li><a href="go_home.html">Home</a></li>
                 <li><a href="go_contact.html">Contact</a></li>
-                <li><a href="go_history.html">History</a></li>
+                <li><a href="go_historyP.html">History</a></li>
                 <li><a href="go_genre.html">Genres and Systems</a></li>
                 <li><a href="go_costs.html">Costs</a></li>
                 <li><a href="go_future.html">Predictions</a></li>
@@ -25,29 +25,37 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <canvas id="sandbox" width="300px" height="300px"> </canvas>
-        <script src="./go_media.js"></script>
-        <script>update();</script>
-    </div>
-    <div>
-        <button onclick="addBall()">
-            start game
-        </button>
-    </div>
-    <div class="gameScore">
-        <p class="score">Score =&nbsp;</p>
-        <p id="score">0</p>
-    </div>
-    <div class="pongVideo">
-        <video width="320" height="240" controls>
-            <source src="go_video.mp4" type="video/mp4">
-            Your browser does not support the video tag.
-        </video>
+    <div class="page">
+        <div>
+            <canvas id="sandbox" width="300px" height="300px"> </canvas>
+            <script src="./go_media.js"></script>
+            <script>update();</script>
+        </div>
+        <div>
+            <button onclick="addBall()">
+                start game
+            </button>
+        </div>
+        <div class="gameScore">
+            <p class="score">Score =&nbsp;</p>
+            <p id="score">0</p>
+        </div>
+        <div class="pongVideo">
+            <video width="320" height="240" controls>
+                <source src="go_video.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
 
+        </div>
+        <p class="mediaP">
+            &emsp;Pong is one of the earliest video games. It was preceded by Tennis for Two and the true first video game: the Cathode-Ray Tube Amusement Device.
+        </p>
+        <p class="space">
+            &emsp;
+        </p>
     </div>
-    <p class="mediaP">
-        pong
-    </p>
+        <footer class="footer">
+            Gamer's Outlook &#8226; gamersoutlook@gmail.com &#8226; (573) 123-4567
+        </footer>
 </body>
 </html>

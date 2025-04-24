@@ -36,16 +36,26 @@ html {
     height: 100%;
     font-family: Verdana, Geneva, sans-serif;
     font-size: 12px;
+    background: rgb(0, 60, 21);
 }
 
 body {
+    display: block;
     background: rgb(117, 140, 72);
     margin: 0px auto;
-    min-height: 100%;
+
+min-height: 100%;
     min-width: 320px;
-    max-width: 2048px;
+    max-width: 1024px;
     width: 100%;
     font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+
+div.page {
+    background: rgb(117, 140, 72);
+    display: block;
+    overflow: auto;
+
 }
 
 p {
@@ -77,6 +87,7 @@ nav {
 
 nav.horizontalNavigation {
     background-color: rgb(255 0 0);
+
     min-height: 15em;
     text-decoration: none;
     width: 100%;
@@ -86,10 +97,11 @@ nav.horizontalNavigation {
         color: rgb(31, 73, 125);
         display: block;
         float: left;
+        text-align: center;
         width: 14%;
         line-height: 2em;
         text-transform: uppercase;
-        margin-top: 0px;
+        margin-top: 1%;
         text-decoration: none;
     }
 
@@ -149,8 +161,12 @@ img.infographic {
 
 
 p.mediaP {
-    width: 70%;
+    width: 34%;
     float: right;
+    border: dotted;
+    padding: 2%;
+    margin: 10%;
+    margin-top: 0%;
 }
 
 
@@ -177,6 +193,71 @@ figure.TFT {
 
 }
 
+
+figure.SSBB {
+    float: left;
+}
+
+body::after {
+    width: 100%;
+    margin-bottom: 20%;
+    display: block;
+    height: 100px;
+}
+
+footer.footer {
+    font-size: 0.9em;
+    text-align: center;
+    padding: 10px 0px;
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: rgb(9, 124, 25);
+    color: white;
+    max-width: 1024px;
+}
+
+p.historyP {
+
+    width: 46%;
+    float: left;
+    border: groove;
+    padding: 2%;
+}
+
+
+img.CRT {
+
+    float: right;
+    border: groove;
+    width: 44%; 
+    margin-top: 20%;
+}
+
+
+p.futureP {
+    border: double;
+    border-width: 10px;
+}
+
+
+figure.VR {
+    width: 40%;
+
+}
+
+figure.Trend {
+    width: 35%;
+    float: left;
+    margin-top: 10%;
+}
+
+p.space {
+    width: 90%;
+
+    margin: 5%;
+
+}
 
 /* ==================================
 Tablet Styles: 481px and greater
@@ -215,6 +296,16 @@ Tablet Styles: 481px and greater
 
     div.pongVideo {
         display: block;
+        text-align: center;
+    }
+
+    p.mediaP {
+        float: none;
+
+        width: 95%;
+        border: dotted;
+        margin: 0%;
+        
     }
 
     table.gameSystems {
@@ -242,6 +333,28 @@ Tablet Styles: 481px and greater
         border: none;
     }
 
+    figure.BG3 {
+        float: left;
+    }
+
+    figure.TFT {
+        float: right;
+    }
+
+    nav.horizontalNavigation li {
+        margin-top: 0%;
+    }
+
+    p.historyP {
+        width: 90%;
+    }
+
+    img.CRT {
+        margin: 0%;
+        width: 50%;
+        float: none;
+        margin-left: 24%;
+    }
 
 }
 
@@ -280,6 +393,14 @@ Mobile Styles: 0px to 480px
 
             div.pongVideo {
                 display: block;
+                text-align: center;
+            }
+
+            p.mediaP {
+                float: none;
+                width: 95%;
+                border: dotted;
+                margin: 0%;
             }
 
             table.gameSystems {
@@ -306,6 +427,30 @@ Mobile Styles: 0px to 480px
                 width: 100%;
                 border: none;
             }
+
+            figure.BG3 {
+                float: left;
+            }
+
+            figure.TFT {
+                float: right;
+            }
+
+            nav.horizontalNavigation li {
+                margin-top: 0%;
+            }
+
+            p.historyP {
+                width: 90%;
+            }
+
+            img.CRT {
+                margin: 0%;
+                width: 50%;
+                float: none;
+                margin-left: 24%;
+            }
+
         }
         /* ==================================
 Desktop Styles: 769px and greater

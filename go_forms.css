@@ -15,12 +15,13 @@
 form#survey {
     display: flex;
     flex-flow: row wrap;
+    float: left;
 }
 
     form#survey > fieldset {
         background-color: rgb(255, 0, 0);
         border-radius: 20px;
-        flex: 1 1 300px;
+        flex: 1 1 330px;
         font-size: 0.85em;
         padding: 10px;
         margin: 10px;
